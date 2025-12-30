@@ -200,7 +200,7 @@ function takeCommand(message) {
                     }, 5000);
                 
              
-                } else if (message.includes("show my wife") || message.includes("mera photo dikhao")) {
+                } else if (message.includes("show my wife") || message.includes("mera wife ka photo dikhao")) {
                     speak("ok sohail...");
                 
                     // Check if image already exists, remove it
@@ -234,7 +234,7 @@ function takeCommand(message) {
                     }, 5000);
            //////////my proof
            
-                 } else if (message.includes("my details") || message.includes("mere details ")) {
+                 } else if (message.includes("my details") || message.includes("mere details  ")) {
             speak("Showing your details...");
         
             // Remove existing details if already present
@@ -345,6 +345,7 @@ async function translateText(text, fromLang, toLang) {
     speak(translatedText, "hi-IN");
     content.innerText = `Translated: ${translatedText}`;
 }
+
 
 
 
